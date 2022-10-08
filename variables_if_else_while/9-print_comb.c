@@ -11,7 +11,7 @@
 	while (n <= '9')
 {
 	putchar(n);
-i	if (n < '9')
+	if (n < '9')
 {
 	putchar (',');
 	putchar (' ');
