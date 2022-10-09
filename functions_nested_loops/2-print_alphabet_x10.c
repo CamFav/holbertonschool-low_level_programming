@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * print_alphabet_x10()
+ * print_alphabet_x10() - description
  *
  * Return: Always 0
  */
 	void print_alphabet_x10(void)
 {
 	int x10, l;
-	
+
 	x10 = 0;
 	while (x10 < 10)
 {
