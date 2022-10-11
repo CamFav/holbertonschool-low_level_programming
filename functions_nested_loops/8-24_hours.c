@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * jack_bauer - description
- * 
+ *
  * Return: Nothing
  */
 	void jack_bauer(void)
 {
 	int h, m, a, b, c, d;
 
-for(h = 0; h < 24; h++)
+for (h = 0; h < 24; h++)
 {
 	a = h / 10;
 	b = h % 10;
