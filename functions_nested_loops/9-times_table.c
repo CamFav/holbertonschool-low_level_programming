@@ -35,6 +35,6 @@ if (b < 9)
 else
 	_putchar('\n');
 }
+	}
 	}	
-		}	
 
