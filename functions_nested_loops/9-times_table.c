@@ -4,43 +4,37 @@
  *
  * Return: nothing
  */
-	void times_table(void)
+	void time_table(void)
 {
-	int x, y;
+	int a, b, c, d, e;
 
-		x = y = 0;
-			while (x <= 9)
-					{
-								y = 0;
-										while (y <= 9)
-													{
-																	if ((x * y) < 10)
-																					{
-																										if (y != 0)
-																															{
-																																					_putchar(' ');
-																																									}
-																														_putchar((x * y) + '0');
-																																		if (y != 9)
-																																							{
-																																													_putchar(',');
-																																																		_putchar(' ');
-																																																						}
-																																					}
-																				else
-																								{
-																													_putchar(((x * y) / 10) + '0');
-																																	_putchar(((x * y) % 10) + '0');
-																																					if (y != 9)
-																																										{
-																																																_putchar(',');
-																																																					_putchar(' ');
-																																																									}
-																																								}
-																							y++;
-																									}
-												_putchar('\n');
-														x++;
-															}
-
+for (a = 0; a < 10; a++)
+{
+for (b = 0; b < 10; b++)
+{
+	c = a * b;
+	d = c / 10;
+	e = c % 10;
+if (b == 0)
+	_putchar('0');
+else if (c < 10)
+{
+	_putchar(' ');
+	_putchar('0' + e);
 }
+else
+{
+	_putchar('0' + d);
+	_putchar('0' + e);
+}
+if (b < 9)
+{
+	_putchar(',');
+	_putchar(' ');
+}
+else
+	_putchar('\n');
+}
+	}	
+		}	
+
