@@ -8,7 +8,7 @@
 {
 	int h = 0, m = 0;
 
-for (h < 24)
+for (h < 24; h++)
 {
 	while (m < 60)
 	{
@@ -20,6 +20,5 @@ for (h < 24)
 		_putchar('\n');
 		m++;
 	}
-h++;
 }
 }
