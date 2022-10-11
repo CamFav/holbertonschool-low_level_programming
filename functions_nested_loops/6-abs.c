@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _abs - Description 
+ * _abs - Description
  * @n: description
  *
  * Return: Return absolute value of integer
@@ -9,6 +9,6 @@
 {
 	if (n < 0)
 		return (n * -1);
-	else 
+	else
 		return (n);
 }
