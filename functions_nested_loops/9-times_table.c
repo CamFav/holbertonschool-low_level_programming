@@ -2,7 +2,7 @@
 /**
  * times_table - description
  *
- * Return: nothing
+ * Return: None
  */
 	void time_table(void)
 {
