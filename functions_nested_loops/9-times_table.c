@@ -4,7 +4,7 @@
  *
  * Return: None
  */
-	void time_table(void)
+	void times_table(void)
 {
 	int a, b, c, d, e;
 
