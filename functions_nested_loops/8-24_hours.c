@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer - description
+ * @h: Hour
+ * @m: Minute
  *
  * Return: Nothing
  */
