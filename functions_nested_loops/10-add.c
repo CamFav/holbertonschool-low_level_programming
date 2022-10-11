@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * add - description
- * @a: first integer 
+ * @a: first integer
  * @b: second integer
  *
  * Return: a + b
