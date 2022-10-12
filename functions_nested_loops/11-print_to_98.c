@@ -14,8 +14,9 @@ if (n >= 98)
 	printf("%i", n);
 	 if (n != 98)
 	 printf(", ");
+} 
 	 printf("\n");
-}
+
 }
 else {
 	for (; n <= 98; n++)
@@ -23,8 +24,8 @@ else {
 	printf("%i", n);
 		if (n != 98)
 	printf(", ");
-	printf("\n");
-}
+	}	
+	printf("\n");}
 }
 }
 
