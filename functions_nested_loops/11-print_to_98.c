@@ -25,7 +25,7 @@ else {
 		if (n != 98)
 	printf(", ");
 	}	
-	printf("\n");}
+	printf("\n");
 }
 }
 
