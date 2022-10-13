@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * reset_to_98 - description
- * @p: input
+ * @n: input
  *
  * Return: True (1) or False (0)
  */
