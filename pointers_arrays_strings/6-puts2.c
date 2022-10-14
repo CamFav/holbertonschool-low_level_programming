@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - function that prints one character on two, 
+ * puts2 - function that prints one character on two,
  * starting with the first character.
  * @str: string
  *
