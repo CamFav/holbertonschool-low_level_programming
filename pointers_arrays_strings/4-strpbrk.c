@@ -20,7 +20,7 @@ while (*s)
 	return (s);
 }
 }
-s++:
+s++;
 }
 return ('\0');
 }
