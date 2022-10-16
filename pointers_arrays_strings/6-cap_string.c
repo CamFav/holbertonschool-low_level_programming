@@ -18,7 +18,7 @@ char *cap_string(char *s)
 		s[i] -= 32;
 	else
 {
-	for (c; c <= 12; c++)
+	for (c = 0; c <= 12; c++)
 {
 	if (a[c] == s[i] - 1)
 		s[i] -= 32;
