@@ -8,7 +8,7 @@
 char *cap_string(char *s)
 {
 	int i = 0;
-	char a[] = "\ \t\n,;.!?\"(){}";
+	char a[] = "\32\t\n,;.!?\"(){}";
 
 if (s[i] >= 97 && s[i] <= 122)
 {
