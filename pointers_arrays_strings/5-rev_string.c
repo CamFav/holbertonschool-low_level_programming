@@ -21,3 +21,4 @@ void rev_string(char *s)
 	r--;
 	i++;
 }
+}
