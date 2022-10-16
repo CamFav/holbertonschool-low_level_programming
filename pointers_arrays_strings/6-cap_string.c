@@ -7,26 +7,18 @@
  */
 char *cap_string(char *s)
 {
-	int i = 0; c;
-	char a[] = " \t\n,;.!?\"(){}";
+	int i = 0;
 
-	while (s[i])
+	while (s[i] != 0)
 {
 	if (s[i] >= 'a' && s[i] <= 'z')
 {
 	if (i == 0)
 		s[i] -= 32;
-	else
-{
-	for (c = 0; c <= 12; c++)
-{
-	if (a[c] == s[i] - 1)
+	else if (s[i - 1] == ' ','\t','\n',',',';','.','!','?','"','(',')','{','}', 32)
 		s[i] -= 32;
-}
-}
 }
 	i++;
 }
 return (s);
 }
-
