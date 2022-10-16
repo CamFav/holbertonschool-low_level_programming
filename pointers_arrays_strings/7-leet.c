@@ -1,10 +1,9 @@
 #include "main.h"
 /**
+ * leet - function that replace some letters by some numbers
+ * @s: string
  *
- *
- *
- *
- *
+ * Return: replaced string
  */
 char *leet(char *s)
 {
@@ -25,12 +24,3 @@ i++;
 }
 return (s);
 }
-
-
-
-
-
-
-
-}
-
