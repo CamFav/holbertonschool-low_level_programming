@@ -8,12 +8,14 @@
 char *leet(char *s)
 {
 	int i, j;
-	i = j = 0;
+	i = 0;
 
 	char a[] = "aAeEoOtTlL";
 	char b[] = "4433007711";
+
 while (s[i] != 0)
 {
+	j = 0;
 	while (a[j] != '\0')
 {
 	if (s[i] == a[j])
