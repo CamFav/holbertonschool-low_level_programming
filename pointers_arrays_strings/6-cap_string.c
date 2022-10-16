@@ -17,7 +17,7 @@ if (s[i] >= 97 && s[i] <= 122)
 {
 	if (i == 0)
 		s[i] -= 32;
-	else if ((s[i - 1] = a[j]))
+	else if (s[i - 1] == a[j])
 		s[i] -= 32;
 }
 i++;
