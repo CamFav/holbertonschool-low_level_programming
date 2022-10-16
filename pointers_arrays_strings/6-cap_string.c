@@ -7,20 +7,15 @@
  */
 char *cap_string(char *s)
 {
-	int i = 0;
-	int j = 0;
+	int i, j;
 	char *a = ",.;{}()\"?!\n\t ";
 
-while (s[i] != 0)
+for (i = 1; s[i] != '\0'; i++)
 {
-if (s[i] >= 97 && s[i] <= 122)
-{
-	if (i == 0)
-		s[i] -= 32;
-	else if (s[i - 1] == a[j]) 
-		s[i] -= 32;
-}
-i++;
+	for (j = 0; a[j] != '\0'; j++)
+		if (s[i - 1] == a[j])
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
 }
 return (s);
 }
