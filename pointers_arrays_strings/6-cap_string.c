@@ -7,9 +7,9 @@
  */
 char *cap_string(char *s)
 {
-	int i = 0; c = 0;
+	int i = 0; c;
 	char a[] = " \t\n,;.!?\"(){}";
-}
+
 	while (s[i])
 {
 	if (s[i] >= 'a' && s[i] <= 'z')
