@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /**
  * _pow_recursion - function that returns the factiorial of a given number
  * @n: integer
