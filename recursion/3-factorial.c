@@ -5,7 +5,7 @@
  *
  * Return: Factorial of n, or -1 if lower than 0.
  */
-int factiorial(int n)
+int factorial(int n)
 {
 	if (n < 0)
 return (-1);
