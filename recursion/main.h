@@ -12,3 +12,4 @@ int add(int, int);
 void print_to_98(int);
 void print_times_table(int);
 void _puts_recursion(char *s);
+void _print_rev_recursion(char *s);
