@@ -8,11 +8,11 @@
  */
 int sqrt_prout(int a, int b)
 {
-	if (g * g == c)
+	if (a * a == b)
 		return (g);
-	if (g * g > c)
+	if (a * a > b)
 		return (-1);
-	return (sqrt_check(g + 1, c));
+	return (sqrt_check(a + 1, b));
 }
 /**
  * _sqrt_recursion - function that returns the natural square
