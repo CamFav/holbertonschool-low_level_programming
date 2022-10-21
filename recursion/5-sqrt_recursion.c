@@ -9,7 +9,7 @@
 int sqrt_prout(int a, int b)
 {
 	if (a * a == b)
-		return (g);
+		return (a);
 	if (a * a > b)
 		return (-1);
 	return (sqrt_check(a + 1, b));
