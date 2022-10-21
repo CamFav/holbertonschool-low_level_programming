@@ -2,9 +2,9 @@
 /**
  * sqrt_prout - function that check for the square root of b
  * @a: a
- * b: b
+ * @b: b
  *
- * Return: -1 or square of c
+ * Return: -1 or square of b
  */
 int sqrt_prout(int a, int b)
 {
