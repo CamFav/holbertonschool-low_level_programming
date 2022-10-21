@@ -12,7 +12,7 @@ int sqrt_prout(int a, int b)
 		return (a);
 	if (a * a > b)
 		return (-1);
-	return (sqrt_check(a + 1, b));
+	return (sqrt_prout(a + 1, b));
 }
 /**
  * _sqrt_recursion - function that returns the natural square
