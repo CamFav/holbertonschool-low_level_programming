@@ -7,8 +7,10 @@
  *
  * Return: name of the program
  */
-int main(int __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
+	(void) argc;
+
 	printf("%\n", argv[0]);
 	return (0);
 }
