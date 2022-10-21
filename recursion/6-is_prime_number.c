@@ -1,19 +1,22 @@
 #include "main.h"
 /**
  * prime_prout - function that checks if number is a prime number
- * @c: check
+ * @n: number to check
  * @p: prime number
  *
  * Return: 1 for prime, otherwise 0
  */
-int prime_prout(int c, int p)
+int prime_prout(int n, int p)
 {
-	if (p < 2 && p % c == 0)
+	if (n <= 1)
 		return (0);
-	else if (c > p / 2)
+	else if (i > n - 1)
 		return (1);
-	else
-		return (prime_prout(c + 1, p));
+	else if (n % i == 0)
+		return (0);
+	if (i == 2)
+		return (prime_prout(n, p + 1));
+	return (prime_prout(n, p + 2));
 }
 
 /**
@@ -25,7 +28,5 @@ int prime_prout(int c, int p)
  */
 int is_prime_number(int n)
 {
-	if (n == 2)
-		return (1);
-	return (prime_prout(2, n));
+	return (prime_prout(n, 2));
 }
