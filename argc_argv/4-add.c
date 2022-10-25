@@ -10,17 +10,20 @@
  */
 int main (int argc, char *argv[])
 {
-	int i, a = 0;
+	int i = 1;
+	int a = 0;
+	int b = 0;
 
-for (i = 1; i < argc; i++)
+for (i; i < argc; i++)
 {
-	if (!atoi(argv[i]))
+	for (a = 0; argv[i][a] != '\0'; a++)
+		if (isdigit(argv[i][a]) == 0)
 {
 	printf("Error\n");
-	return (1);
+	return (-1);
 }
-	a += atoi(argv[i]);
+	b += atoi(argv[i];
 }
-	printf("%d\n", a);
+	printf("%d\n", c);
 	return (0);
 }
