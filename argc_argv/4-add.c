@@ -12,18 +12,21 @@ int main (int argc, char *argv[])
 {
 	int i = 1;
 	int a = 0;
-	int b = 0;
 
 	for (; i < argc; i++)
 {
-	for (a = 0; argv[i][a] != '\0'; a++)
-		if (isdigit(argv[i][a]) == 0)
+	int b = 0;
+
+	for (; argv[i][b] != '\0'; b++)
 {
-			printf("Error\n");
-			return (-1);
-}
-	b += atoi(argv[i];
-}
-	printf("%d\n", c);
+	if (!isdigit(argv[i][c]))
+{
+	printf("Error\n");
 	return (0);
+}
+}
+	a += atoi(argv[i]);
+}
+printf("%d\n", a);
+return (0);
 }
