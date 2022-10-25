@@ -8,7 +8,7 @@
  *
  * Return: added positive numbers
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i = 1;
 	int a = 0;
