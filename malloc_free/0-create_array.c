@@ -12,7 +12,7 @@ char *create_array(unsigned int size, char c)
 	char *a = malloc(sizeof(char) * size);
 	unsigned int i = 0;
 
-	if (size = 0 && a == 0)
+	if (size = 0 || a == 0)
 		return ('\0');
 
 	for (; i < size; i++)
