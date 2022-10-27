@@ -8,7 +8,7 @@
  *
  * Return: Pointer to new string
  */
-char *_strdup (char *str)
+char *_strdup(char *str)
 {
 	char *nstr;
 	int i = 0;
