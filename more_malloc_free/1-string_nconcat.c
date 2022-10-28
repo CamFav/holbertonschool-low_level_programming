@@ -33,7 +33,7 @@ c = malloc(sizeof(char) * (i + x + 1));
 if (c == NULL)
 	return (NULL);
 for (z = 0; z < i; z++)
-	oc[z] = s1[z];
+	c[z] = s1[z];
 for (z = 0; z < x; z++)
 	c[z + i] = s2[z];
 c[i + x] = '\0';
