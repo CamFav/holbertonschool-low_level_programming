@@ -31,11 +31,11 @@ if (x > n)
 	x = n;
 c = malloc(sizeof(char) * (i + x + 1));
 if (c == NULL)
-	return (NULL)
+	return (NULL);
 for (z = 0; z < i; z++)
 	s[z] = s1[z];
 for (z = 0; z < x; z++)
 	s[z + i] = s2[z];
-s[i + x] = '\0';
-return (s);
+c[i + x] = '\0';
+return (c);
 }
