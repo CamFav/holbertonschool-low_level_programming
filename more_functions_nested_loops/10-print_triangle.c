@@ -9,14 +9,24 @@ void print_triangle(int size)
 {
 	int i, x;
 
-	for (i = 1; i <= size; i++)
+	if (size <= 0)
 {
-	for (x = 0; x < size - i; x++)
-		_putchar (' ');
-	for (x = 0; x < i + (size - i); x++)
+	_putchar('\n');
+	return;
+}
+	for (i = 0; i < size; i++)
+{
+	for (x = 0; x < size; x++)
+{
+		if (x >= size - i - 1)
+	{
 		_putchar('#');
-	if (i != size)
-		_putchar('\n');
+	}
+		else
+	{
+		_putchar(' ');
+	}
 }
 _putchar('\n');
+}
 }
