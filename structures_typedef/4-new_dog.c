@@ -10,7 +10,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct User *new_dog;
+	dog_t *new_dog;
 	char *new_name = malloc(sizeof(dog_t) * strlen(name)); 
 	char *new_owner = malloc(sizeof(dog_t) * strlen(owner));
 
