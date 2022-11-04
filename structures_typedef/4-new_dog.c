@@ -10,11 +10,10 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct User *new_dog;
-	new_dog = malloc(sizeof(dog_t));
-
-	strcpy(new_dog->name, name);
-	strcpy(new_dog->owner, owner);
+	dog_t *new_dog;
+	
+	strcpy(new_dog.name, name, sizeof(name))
+	strcpy(new_dog.owner, owner, sizeof(owner))
 
 	if (new_dog == NULL)
 		return (NULL);
