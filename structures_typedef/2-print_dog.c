@@ -15,7 +15,7 @@ void print_dog(struct dog *d)
 }
 	else if (d == NULL)
 {
-	d->name, "(nil)";
-	d->owner, "(nil)";
+	strcpy(d->name, "(nil)");
+	strcpy(d->owner, "(nil)");
 }
 }
