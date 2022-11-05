@@ -3,6 +3,7 @@
 /**
  * print_name - function that prints a name
  * @name: name
+ * @f: function
  *
  * Return: name
  */
