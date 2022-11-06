@@ -5,7 +5,7 @@
  * @separator: no time
  * @n: no time
  */
-void print_strings(const char *separator, const unsigned int in, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list words;
 	char *word;
@@ -13,9 +13,9 @@ void print_strings(const char *separator, const unsigned int in, ...)
 
 	va_start(words, n);
 	i = 0;
-	while (i < n )
+	while (i < n)
 	{
-		word = va_arg(words, char *s);
+		word = va_arg(words, char *);
 		if (word != NULL)
 			printf("%s", word);
 		else
