@@ -9,7 +9,7 @@
  *
  * Return: -1 or smth
  */
-int int_index(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size_t size, int (*cmp)(int))
 {
 	int i = 0;
 
@@ -26,4 +26,4 @@ int int_index(int *array, int size, int (*cmp)(int))
 		i++;
 }
 return (-1);
-}
+i}
