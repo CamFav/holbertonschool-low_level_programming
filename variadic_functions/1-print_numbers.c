@@ -1,5 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * print_numbers - function that prints numbers/n
  * @separator: string
