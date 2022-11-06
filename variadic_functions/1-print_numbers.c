@@ -11,7 +11,7 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list amount
+	va_list amount;
 	unsigned int i = 0;
 
 	va_start(amount, n);
