@@ -9,21 +9,22 @@
  *
  * Return: -1 or smth
  */
-int int_index(int *array, int size_t size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
 
-	if (!array | !cmp)
+	if (!array || !cmp)
 		return (-1);
-
-	if (size <= 0)
+	
+	if (!size <= 0)
 		return (-1);
 
 	for (; i < size; i++)
 {
-		if (cmp(array[i]))
+		int fta = (*cmp)(array[i]);
+
+		if (fta)
 			return (i);
-		i++;
 }
 return (-1);
 i}
