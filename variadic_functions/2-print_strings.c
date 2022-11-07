@@ -7,23 +7,32 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list words;
-	char *word;
+	va_list args;
+	va_start(args, size);
+
+	if (!separator)
+		return;
+	
 	unsigned int i;
 
-	va_start(words, n);
-	i = 0;
-	while (i < n)
+	for (i = 0; i < size; i++)
 	{
-		word = va_arg(words, char *);
-		if (word != NULL)
-			printf("%s", word);
-		else
+		char *samere = va_arg(args, char *);
+
+		if (samere == NULL)
 			printf("(nil)");
-		if (i < n - 1 && separator != NULL)
+		else
+			printf("%s", samere);
+
+		if (i < size - 1)
 			printf("%s", separator);
-		i++;
 	}
 	printf("\n");
-	va_end(words);
+}
+
+
+	if (separator)
+		return;
+	
+	for (i
 }
