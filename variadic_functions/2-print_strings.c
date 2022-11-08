@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * print_strings - no time 
+ * print_strings - no time
  * @separator: no time
  * @n: no time
  */
@@ -9,6 +9,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list args;
+
 	va_start(args, n);
 	
 	if (!separator)
