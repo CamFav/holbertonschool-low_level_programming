@@ -11,7 +11,8 @@
  */
 size_t print_list(const list_t *h)
 {
-	list_t *node = head;
+	list_t *node = h;
+
 	while (!node)
 	{
 		printf("%s", node->str);
