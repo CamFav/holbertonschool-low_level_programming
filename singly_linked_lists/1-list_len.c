@@ -7,10 +7,12 @@
  */
 size_t list_len(const list_t *h)
 {
+	size_t number = 1;
+
 	if (!h)
 		return (0);
 	
 	if (h->next)
-		printf("-> %d elements\n", h->len);
-	return (0);
+		number = number + list_len(h->next);
+	return (number);
 }
