@@ -2,6 +2,7 @@
 /**
  * add_node_end - function that adds a new node at the end of a list.
  * @str: string
+ * @head: pointer to head
  *
  * Return: address of new element, or NULL if fail
  */
