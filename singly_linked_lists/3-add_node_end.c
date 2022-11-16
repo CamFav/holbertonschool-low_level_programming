@@ -18,11 +18,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (!head)
 	{
 		*head = newNode;
-		return;
+		return (NULL);
 	}
 
 	while (!lastNode->next)
 		lastNode = lastNode->next;
 	lastNode->next = newNode;
-	return;
+	return (newNode);
 }
