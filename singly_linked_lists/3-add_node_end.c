@@ -8,21 +8,21 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newNode = malloc(sizeof(list_t));
+
+	list_t *lastNode = *head;
+
 	newNode->str = strdup(str);
-	newNode->next = NULL;
 	newNode->len = strlen(str);
+	newNode->next = NULL;
 
-	if (!newNode)
-		return (NULL);
-	else
+	if (!head)
 	{
-		list_t *lastNode = *head;
+		*head = newNode;
+		return;
+	}
 
-		while (!lastNode->next)
-		{
-			lastNode = lastNode->next;
-		}
-		lastNode->next = newNode;
-}
-return (newNode);
+	while (!lastNode->next)
+		lastNode = lastNode->next;
+	lastNode->next = newNode;
+	return;
 }
