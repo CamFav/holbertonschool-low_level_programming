@@ -28,10 +28,10 @@ list_t *add_node_end(list_t **head, const char *str)
 		while (lastNode)
 			if (!lastNode->next)
 			{
-				lastNode->net = newNode;
+				lastNode->next = newNode;
 				break;
 			}
 		lastNode = lastNode->next;
 	};
-	return (lastNode);
+	return (newNode);
 }
