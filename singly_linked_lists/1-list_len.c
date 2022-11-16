@@ -7,6 +7,9 @@
  */
 size_t list_len(const list_t *h)
 {
+	if (!h)
+		return (0);
+	
 	if (h->str)
 		printf("-> %d elements\n", h->len);
 	return (0);
