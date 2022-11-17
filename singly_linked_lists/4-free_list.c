@@ -16,5 +16,5 @@ void free_list(list_t *head)
 		freedom = prison;
 	}
 	head = NULL;
-	return (head);
+	return (0);
 }
