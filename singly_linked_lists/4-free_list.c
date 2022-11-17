@@ -7,14 +7,11 @@
  */
 void free_list(list_t *head)
 {
-	list_t *freedom, *prison;
-	freedom = head;
-	while (freedom)
-	{
-		prison = freedom->next;
-		free(freedom);
-		freedom = prison;
-	}
-	head = NULL;
-	return (free_list);
+	if (!head)
+		return;
+	if (head->next)
+		free_list(head->next);
+
+	free(head->str);
+	free(head);
 }
