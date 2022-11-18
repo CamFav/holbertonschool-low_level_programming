@@ -8,13 +8,13 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-
+	listint_t *newNode = head;
 	unsigned int count = 0;
 
 	while (count != index)
 	{
 		head = head->next;
-		if (head)
+		if (!head)
 			return (NULL);
 		count++;
 	}
