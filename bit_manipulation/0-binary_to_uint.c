@@ -18,6 +18,6 @@ unsigned int binary_to_uint(const char *b)
 		val = val << 1;
 		val = val + b[i] - '0';
 		i++;
-	}													        }
+	}
 return (val);
 }
