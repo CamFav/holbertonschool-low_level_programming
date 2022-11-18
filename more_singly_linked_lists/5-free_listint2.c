@@ -16,4 +16,6 @@ void free_listint2(listint_t **head)
 
 	if (freedom->next)
 		free_listint2(freedom->next);
+
+	free(freedom);
 }
