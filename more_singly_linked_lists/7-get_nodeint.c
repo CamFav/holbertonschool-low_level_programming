@@ -8,22 +8,14 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *newNode = malloc(sizeof(listint_t));
 
-	newNode->n = data;
-	newNode->next = (*head);
-	(*head) = newNode;
+	unsigned int count = 0;
+	head = head->next;
 
-	listint_t *nth = head;
-
-	int count = 0;
-
-	while (nth)
+	while (head)
 	{
 		if (count == index)
-			return (nth->data);
-		count++;
-		nth = nth->next;
+			return (head);
 	}
-	assert(0);
+	return(NULL);
 }
