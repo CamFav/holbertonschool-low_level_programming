@@ -9,12 +9,19 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	int file_descriptor;
+
+	file_descriptor = open(filename, O_RDONLY);
+
 	if (!filename)
 		return (NULL);
 
-	else
-	{
-		int *count = malloc(sizeof(letters));
-		while (count != letters)
-			count++;
+	if (file_descriptor == -1)
+		return (0);
+		close (file_descriptor);
+}
+
+
+
+
 
