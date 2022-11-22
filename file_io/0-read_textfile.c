@@ -9,7 +9,8 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_descriptor;
+	int file_descriptor, numbers;
+	char str[BUFSIZE];
 
 	file_descriptor = open(filename, O_RDONLY);
 
@@ -18,7 +19,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (file_descriptor == -1)
 		return (0);
-		close (file_descriptor);
+
+	read(file_descriptor, str, letters);
+	str[BUFSIZE] = '\0';
+
+	while (letters > BUFSIZE)
+	{
+		write(STDOUT_FILENO, &str, 1);
+	
+	close(file_descriptor);
+	return (strlen(str));
+	}
 }
 
 
