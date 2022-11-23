@@ -9,7 +9,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_descriptor, numbers;
+	int file_descriptor;
 	char str[BUFSIZ];
 
 	file_descriptor = open(filename, O_RDONLY);
@@ -31,8 +31,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	return (strlen(str));
 	}
 }
-
-
-
-
-
