@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	while (letters != BUFSIZ)
 	{
 		fprint = write(STDOUT_FILENO, buffer, fread);
-	
+
 	close(file_descriptor);
 	return (fprint);
 	}
