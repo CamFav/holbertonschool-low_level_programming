@@ -8,7 +8,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int file_descriptor, index, fprint;
+	int file_descriptor;
 
 	if (!filename)
 		return (-1);
@@ -23,6 +23,7 @@ int create_file(const char *filename, char *text_content)
 		close(file_descriptor);
 		return (1);
 	}
+	return (0);
 }
 
 
