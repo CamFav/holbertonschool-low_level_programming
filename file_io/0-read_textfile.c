@@ -9,26 +9,28 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_descriptor;
-	char str[BUFSIZ];
-
-	file_descriptor = open(filename, O_RDONLY);
+	int file_descriptor, fread, fprint;
+	char buffer[BUFSIZE];
 
 	if (!filename)
 		return (0);
 
+	file_descriptor = open(filename, O_RDONLY);
+
 	if (file_descriptor == -1)
 		return (0);
 
-	read(file_descriptor, str, letters);
-	str[BUFSIZ] = '\0';
+	fread = read(file_descriptor, buffer, letters);
 
-	while (letters > BUFSIZ)
+	if (fread == -1)
+		return (0);
+
+	while (letters != BUFSIZE)
 	{
-		write(STDOUT_FILENO, &str, 1);
+		fprint = write(STDOUT_FILENO, buffer, fread);
 	
 	close(file_descriptor);
-	return (strlen(str));
+	return (fprint);
 	}
 return (0);
 }
