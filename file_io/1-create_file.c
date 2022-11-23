@@ -8,11 +8,19 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int file_descriptor, fread, fprint, fcreate;
-	char buffer[BUFSIZ];
+	int file_descriptor, index, fprint;
 
 	if (!filename)
 		return (-1);
 
+	file_descriptor = open(filename, O_CREAT | O_WRONLY | O_TRUNC);
+
+	if (file_descriptor == -1)
+		return (-1);
+
 	if (!text_content)
+		close(file_descriptor);
+		return (1);
+}
+
 
