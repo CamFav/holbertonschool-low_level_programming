@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * add_dnodeint - function that adds a new node at the beginning of
  * a doubly linked list.
