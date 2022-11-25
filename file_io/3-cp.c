@@ -11,13 +11,10 @@ int main(int ac, char **av)
 	int file_descriptor, copy_file;
 	char buffer[1024];
 
-	file_descriptor = 0;
-	copy_file = 0;
-	size = 1;
-	fprint = 0;
-
 	if (ac != 3)
 		exit();
+
+	file_descriptor = 0;
 
 	file_descriptor = open(av[1], O_RDONLY);
 
@@ -27,7 +24,11 @@ int main(int ac, char **av)
 		exit(98);
 	}
 
+	copy_file = 0;
+
 	copy_file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+
+	size = 1;
 
 	while (size > 0)
 	{
@@ -38,6 +39,8 @@ int main(int ac, char **av)
 			exit(98);
 		}
 		fprint = write(copy_file, buffer, size);
+		fprint = 0;
+
 		if (fprint == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
