@@ -4,7 +4,7 @@
  * a doubly linked list.
  * @h: pointer to head node
  *
- * Return: number of elements
+ * Return: all the elements
  */
 size_t print_dlistint(const dlistint_t *h)
 {
