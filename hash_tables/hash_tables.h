@@ -32,4 +32,5 @@ typedef struct hash_table_s
 	hash_node_t **array;
 } hash_table_t;
 hash_table_t *hash_table_create(unsigned long int size);
+int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 #endif
