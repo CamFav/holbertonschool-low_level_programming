@@ -60,7 +60,7 @@ int main(int ac, char **av)
 	}
 	if (close(copy_file) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", copy_file);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", copy_file);
 		exit(100);
 	}
 	return (0);
