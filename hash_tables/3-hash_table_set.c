@@ -4,7 +4,7 @@
  * @ht: target
  * @key: key, cannot be an empty string.
  * @value: value associated to the key, must be dupliacated and can be an
- * empty string.
+ * empty string. 
  *
  * Return: 1 or 0 if fail.
  */
