@@ -1,10 +1,10 @@
-#include "hash_table.h"
+#include "hash_tables.h"
 /**
  * hash_table_set - function that adds an element to the hash table
  * @ht: target
  * @key: key, cannot be an empty string.
  * @value: value associated to the key, must be dupliacated and can be an
- * empty string. 
+ * empty string.
  *
  * Return: 1 or 0 if fail.
  */
