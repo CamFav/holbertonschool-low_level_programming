@@ -10,6 +10,6 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	if (!array)
+	if (!array || !size || !value)
 		return (-1);
 }
